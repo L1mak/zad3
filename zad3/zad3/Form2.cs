@@ -22,7 +22,7 @@ namespace zad3
             if (id == 1)
             {
                 button1.Visible = false;
-            }
+            } 
             MessageBox.Show(id.ToString());
         }
     }
