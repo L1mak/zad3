@@ -55,7 +55,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(14, 60);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(200, 30);
@@ -105,7 +105,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(688, 436);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(256, 58);
             this.button1.TabIndex = 9;
@@ -115,7 +115,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(0, 450);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(173, 44);
             this.button2.TabIndex = 10;
@@ -125,8 +125,8 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(375, 60);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox5.Location = new System.Drawing.Point(356, 195);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(200, 30);
@@ -134,8 +134,8 @@
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(729, 60);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox6.Location = new System.Drawing.Point(699, 183);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(200, 30);
@@ -173,7 +173,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(18, 183);
+            this.textBox2.Location = new System.Drawing.Point(376, 60);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
@@ -182,7 +182,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(355, 183);
+            this.textBox3.Location = new System.Drawing.Point(699, 60);
             this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
@@ -191,7 +191,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(696, 183);
+            this.textBox4.Location = new System.Drawing.Point(14, 195);
             this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
@@ -291,7 +291,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form3";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);

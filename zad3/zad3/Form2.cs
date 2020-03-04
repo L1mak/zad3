@@ -19,11 +19,7 @@ namespace zad3
         public static int id;
         private void Form2_Load(object sender, EventArgs e)
         {
-            if (id == 1)
-            {
-                button1.Visible = true;
-            } 
-            MessageBox.Show(id.ToString());
+
         }
 
         private void button1_Click(object sender, EventArgs e)

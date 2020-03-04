@@ -30,7 +30,12 @@ namespace zad3
         {
             conn.con.Open();
             SqlCommand com = new SqlCommand("SELECT * FROM ",conn.con);
+            SqlDataReader read = conn.koeff.ExecuteReader();
+            while (read.Read())
+            {
+                textBox1.Text = read["Junior_мин_ЗП"].ToString();
+            }
             conn.con.Close();
-        }
+            }
     }
 }
