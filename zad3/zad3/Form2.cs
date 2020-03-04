@@ -21,9 +21,30 @@ namespace zad3
         {
             if (id == 1)
             {
-                button1.Visible = false;
+                button1.Visible = true;
             } 
             MessageBox.Show(id.ToString());
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form3 f3 = new Form3();
+            f3.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form4 f4 = new Form4();
+            f4.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form5 f5 = new Form5();
+            f5.Show();
+            this.Hide();
         }
     }
 }
