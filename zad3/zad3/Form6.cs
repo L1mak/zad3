@@ -25,7 +25,7 @@ namespace zad3
                 foreach (DataRow dr in conn.data.Tables[0].Rows)
                 {
                     if (dr[5].ToString() == Form2.id.ToString())
-                        comboBox1.Items.Add("Задача №" + conn.data.Tables[4].Rows[i][0]);
+                        comboBox1.Items.Add("Задача №" + conn.data.Tables[3].Rows[i][0]);
                     i++;
                 }
                 
@@ -36,13 +36,23 @@ namespace zad3
         }
         private void update_text()
         {
-            string n = conn.data.Tables[4].Rows[int.Parse(comboBox1.Text[comboBox1.Text.Length - 1].ToString()) - 1][2].ToString();
+            string n = conn.data.Tables[3].Rows[int.Parse(comboBox1.Text[comboBox1.Text.Length - 1].ToString()) - 1][2].ToString();
             textBox1.Text = n;
-            string s = conn.data.Tables[4].Rows[int.Parse(comboBox1.Text[comboBox1.Text.Length - 1].ToString()) - 1][3].ToString();
+            string o = conn.data.Tables[3].Rows[int.Parse(comboBox1.Text[comboBox1.Text.Length - 1].ToString()) - 1][3].ToString();
+            textBox2.Text = o;
+            string sr = conn.data.Tables[3].Rows[int.Parse(comboBox1.Text[comboBox1.Text.Length - 1].ToString()) - 1][4].ToString();
+            textBox3.Text = sr;
+            string d = conn.data.Tables[3].Rows[int.Parse(comboBox1.Text[comboBox1.Text.Length - 1].ToString()) - 1][5].ToString();
+            textBox4.Text = d;
+            string s = conn.data.Tables[3].Rows[int.Parse(comboBox1.Text[comboBox1.Text.Length - 1].ToString()) - 1][6].ToString();
             textBox5.Text = s;
-            string st = conn.data.Tables[4].Rows[int.Parse(comboBox1.Text[comboBox1.Text.Length - 1].ToString()) - 1][4].ToString();
+            string v = conn.data.Tables[3].Rows[int.Parse(comboBox1.Text[comboBox1.Text.Length - 1].ToString()) - 1][7].ToString();
+            textBox6.Text = v;
+            string i = conn.data.Tables[3].Rows[int.Parse(comboBox1.Text[comboBox1.Text.Length - 1].ToString()) - 1][8].ToString();
+            textBox7.Text = i;
+            string st = conn.data.Tables[3].Rows[int.Parse(comboBox1.Text[comboBox1.Text.Length - 1].ToString()) - 1][9].ToString();
             textBox8.Text = st;
-            string h = conn.data.Tables[4].Rows[int.Parse(comboBox1.Text[comboBox1.Text.Length - 1].ToString()) - 1][5].ToString();
+            string h = conn.data.Tables[3].Rows[int.Parse(comboBox1.Text[comboBox1.Text.Length - 1].ToString()) - 1][10].ToString();
             textBox9.Text = h;
         }
 

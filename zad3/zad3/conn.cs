@@ -12,7 +12,7 @@ namespace zad3
     {
         private static SqlConnectionStringBuilder sql = new SqlConnectionStringBuilder()
         {
-            DataSource = "LAPTOP-R3TPO26M\\SQLEXPRESS", InitialCatalog = "jojo", IntegratedSecurity = true
+            DataSource = "303-17\\SQLSERVER", InitialCatalog = "jojo", IntegratedSecurity = true
         };
 
         public static SqlConnection con = new SqlConnection(sql.ConnectionString);
@@ -25,7 +25,6 @@ namespace zad3
             "SELECT * FROM dbo.executor",
             "SELECT * FROM dbo.manager",
             "SELECT * FROM dbo.koeff",
-            "SELECT * FROM dbo.salary",
             "SELECT * FROM dbo.tasks"
             };
             for (int i = 0; i < list.Count; i++)
