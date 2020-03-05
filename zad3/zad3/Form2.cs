@@ -16,7 +16,7 @@ namespace zad3
         {
             InitializeComponent();
         }
-        public static int id;
+        public static int id = 0;
         private void Form2_Load(object sender, EventArgs e)
         {
 
