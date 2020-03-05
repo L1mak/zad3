@@ -12,7 +12,7 @@ namespace zad3
 {
     public partial class Form1 : Form
     {
-        public static string s;
+        public static List<string> s = new List<string>();
         public Form1()
         {
             InitializeComponent();
@@ -37,7 +37,7 @@ namespace zad3
             if (read1.HasRows)
             {
                 read1.Read();
-                    s = read1[1].ToString();
+                    s.Add(read1[1].ToString());
                 MessageBox.Show("Вы успешно авторизовались");
                 read1.Close();
                 conn coh = new conn();

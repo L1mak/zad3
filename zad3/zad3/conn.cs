@@ -12,7 +12,7 @@ namespace zad3
     {
         private static SqlConnectionStringBuilder sql = new SqlConnectionStringBuilder()
         {
-            DataSource = "303-17\\SQLSERVER", InitialCatalog = "jojo", IntegratedSecurity = true
+            DataSource = "LAPTOP-R3TPO26M\\SQLEXPRESS", InitialCatalog = "jojo", IntegratedSecurity = true
         };
 
         public static SqlConnection con = new SqlConnection(sql.ConnectionString);

@@ -19,11 +19,15 @@ namespace zad3
         public static int id = 0;
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            if (id == 0)
+            {
+                button1.Visible = false;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             Form3 f3 = new Form3();
             f3.Show();
             this.Hide();
