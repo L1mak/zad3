@@ -30,12 +30,19 @@
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
+            this.ФИО = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Грейд = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Менеджер = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ФИО,
+            this.Грейд,
+            this.Менеджер});
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(776, 370);
@@ -51,6 +58,21 @@
             this.button1.Text = "Назад";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // ФИО
+            // 
+            this.ФИО.HeaderText = "ФИО";
+            this.ФИО.Name = "ФИО";
+            // 
+            // Грейд
+            // 
+            this.Грейд.HeaderText = "Грейд";
+            this.Грейд.Name = "Грейд";
+            // 
+            // Менеджер
+            // 
+            this.Менеджер.HeaderText = "Менеджер";
+            this.Менеджер.Name = "Менеджер";
             // 
             // Form5
             // 
@@ -71,5 +93,8 @@
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ФИО;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Грейд;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Менеджер;
     }
 }

@@ -13,7 +13,6 @@ namespace zad3
 {
     public partial class Form5 : Form
     {
-        SqlConnection conn = new SqlConnection("Data Source=303-9\\MSSQLSERVERRR; Initial Catalog = jojo; Integrated Security=true;");
         public Form5()
         {
             InitializeComponent();
@@ -21,9 +20,26 @@ namespace zad3
 
         private void Form5_Load(object sender, EventArgs e)
         {
-
+            load();
         }
-
+        private void load()
+        {
+            dataGridView1.Rows.Clear();
+            conn.con.Open();
+            SqlCommand sql = new SqlCommand("SELECT [FIO_executor], [Grade]," +
+                " [ФИО_менеджера] FROM executor, manager " +
+                "WHERE dbo.executor.id_manager= dbo.manager.id", conn.con);
+            SqlDataReader read = sql.ExecuteReader();
+            while (read.Read())
+            {
+                dataGridView1.Rows.Add(
+                    read[0].ToString(),
+                    read[1].ToString(),
+                    read[2].ToString()
+                    );
+            }
+            conn.con.Close();
+        }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 

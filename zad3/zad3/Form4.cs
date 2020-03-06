@@ -48,6 +48,10 @@ namespace zad3
                             }
                         dataGridView1.Rows.Add(dg);
                     }
+            if (Form2.id != 0)
+                comboBox1.Visible = true;
+            else
+                label2.Visible = false;
         }
         private void Form4_Load(object sender, EventArgs e)
         {
@@ -65,6 +69,13 @@ namespace zad3
         {
             Form7 f7 = new Form7();
             f7.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2();
+            f2.Show();
             this.Hide();
         }
     }

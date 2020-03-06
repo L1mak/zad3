@@ -209,7 +209,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(12, 477);
+            this.button3.Location = new System.Drawing.Point(12, 437);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(133, 30);
             this.button3.TabIndex = 24;
@@ -265,7 +265,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(933, 519);
+            this.ClientSize = new System.Drawing.Size(933, 499);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.comboBox5);
             this.Controls.Add(this.comboBox4);
